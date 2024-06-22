@@ -1,0 +1,582 @@
+.raise-ticket-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.raise-ticket-modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.raise-ticket-modal-content .raise-ticket-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.raise-ticket-modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.raise-ticket-form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.raise-ticket-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.raise-ticket-form-group select,
+.raise-ticket-form-group textarea,
+.raise-ticket-input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.raise-ticket-form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.raise-ticket-form-group .input-error {
+  border-color: red;
+}
+
+.raise-ticket-modal-buttons {
+  display: flex;
+  margin-top: 20px;
+  gap: 48px;
+  margin-left: 80px;
+}
+
+.raise-ticket-modal-buttons .raise-ticket-next-button,
+.raise-ticket-modal-buttons .raise-ticket-cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100px;
+  border: 1px #0183FF;
+}
+
+.raise-ticket-modal-buttons .raise-ticket-next-button {
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.raise-ticket-modal-buttons .raise-ticket-next-button:hover {
+  background-color: #0056b3;
+}
+
+.raise-ticket-modal-buttons .raise-ticket-cancel-button {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.raise-ticket-modal-buttons .raise-ticket-cancel-button:hover {
+  background-color: #909090;
+  color: white;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.submit-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* bef formic */
+/* .raise-ticket-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.raise-ticket-modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.raise-ticket-modal-content .raise-ticket-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.raise-ticket-modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.raise-ticket-form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.raise-ticket-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.raise-ticket-form-group select,
+.raise-ticket-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.raise-ticket-form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.raise-ticket-modal-buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 48px;
+}
+
+.raise-ticket-modal-buttons .raise-ticket-next-button,
+.raise-ticket-modal-buttons .raise-ticket-cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100px;
+  border: 1px  #0183FF;
+}
+
+.modal-buttons .cancel-button,
+.modal-buttons .next-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; 
+  width: 100px;
+}
+.raise-ticket-modal-buttons .raise-ticket-next-button {
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 80px;
+}
+
+.raise-ticket-modal-buttons .raise-ticket-next-button:hover {
+  background-color: #0056b3;
+}
+
+.raise-ticket-modal-buttons .raise-ticket-cancel-button {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.raise-ticket-modal-buttons .raise-ticket-cancel-button:hover {
+  background-color:  #909090;
+  color: white;
+}
+
+.form-group input,
+.form-group select {
+  font-size: 16px;
+  font-size: 400;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+/* bef class name  */
+/* .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .modal-content .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .modal-buttons .next-button,
+  .modal-buttons .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 45%;
+  }
+  
+  .modal-buttons .next-button {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .modal-buttons .next-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal-buttons .cancel-button {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .modal-buttons .cancel-button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+ */
+
+
+
+
+
+
+
+
+
+/* good work123 */
+/* .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group textarea {
+    height: 60px;
+    resize: none;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .modal-buttons .next-button,
+  .modal-buttons .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+  }
+  
+  .modal-buttons .next-button {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .modal-buttons .next-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal-buttons .cancel-button {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .modal-buttons .cancel-button:hover {
+    background-color: #007bff;
+    color: white;
+  } */
+  
+  
+
+
+
+
+
+
+
+
+
+  /* ////////////////////Hard core data  */
+
+
+/* .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group textarea {
+    height: 60px;
+    resize: none;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .modal-buttons .next-button,
+  .modal-buttons .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+  }
+  
+  .modal-buttons .next-button {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .modal-buttons .next-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal-buttons .cancel-button {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .modal-buttons .cancel-button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+   */

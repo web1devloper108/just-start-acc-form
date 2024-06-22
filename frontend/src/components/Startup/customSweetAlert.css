@@ -1,0 +1,63 @@
+.popup-class {
+  max-width: 400px !important; /* Set the width of the popup */
+  padding: 20px !important; /* Add padding to the popup */
+}
+
+.title-class {
+  font-size: 22px; /* Adjust title font size */
+  font-weight: bold; /* Make title bold */
+}
+
+.text-class {
+  font-size: 16px; /* Adjust text font size */
+  color: #757575; /* Adjust text color */
+}
+
+.confirm-button-class {
+  background-color: #007bff !important; /* Button color */
+  color: white !important; /* Button text color */
+  border-radius: 5px; /* Button border radius */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Button font size */
+}
+
+.confirm-button-class:hover {
+  background-color: #0056b3 !important; /* Button hover color */
+}
+
+
+
+
+
+
+
+
+
+/* // bef save list213 */
+/* .popup-class {
+    max-width: 400px !important; 
+    padding: 20px !important; 
+  }
+  
+  .title-class {
+    font-size: 22px; 
+    font-weight: bold; 
+  }
+  
+  .text-class {
+    font-size: 16px; 
+    color: #757575; 
+  }
+  
+  .confirm-button-class {
+    background-color: #007bff !important; 
+    color: white !important; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+  }
+  
+  .confirm-button-class:hover {
+    background-color: #0056b3 !important; 
+  }
+   */

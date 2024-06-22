@@ -1,0 +1,27 @@
+.popup-class {
+    max-width: 400px !important;
+    padding: 20px !important;
+  }
+  
+  .title-class {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .text-class {
+    font-size: 16px;
+    color: #757575;
+  }
+  
+  .confirm-button-class {
+    background-color: #007bff !important;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .confirm-button-class:hover {
+    background-color: #0056b3 !important;
+  }
+  

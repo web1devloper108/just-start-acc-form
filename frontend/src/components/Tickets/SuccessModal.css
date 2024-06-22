@@ -1,0 +1,144 @@
+.success-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .success-modal-content {
+    background: white;
+    padding: 5px; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    width: 421px;
+    height: 291px;
+  }
+  
+  .success-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .success-modal-body {
+    padding: 30px; /* Adjusted padding inside the modal body */
+  }
+  
+  .success-modal-body h2 {
+    font-size: 24px; /* Adjusted font size of the title */
+    font-weight: 700; /* Adjusted font weight of the title */
+    margin-top: 10px;
+  }
+  
+  .success-modal-body p {
+    font-size: 18px; /* Adjusted font size of the message */
+    color: #757575;
+  }
+  
+  .success-icon {
+    font-size: 41px; /* Adjusted size of the icon */
+    color: #0183FF; /* Adjusted color of the icon */
+    margin-bottom: 20px; /* Margin below the icon */
+  }
+  
+  .success-modal-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Adjusted font size of the button */
+    margin-top: 20px;
+  }
+  
+  .success-modal-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+/* .success-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .success-modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .success-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .success-modal-body {
+    padding: 20px;
+  }
+  
+  .success-modal-body h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .success-modal-body p {
+    font-size: 16px;
+    color: #757575;
+  }
+  
+  .success-icon {
+    font-size: 40px;
+    color: #18a63b;
+    background-color: #e0f7ea;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  .success-modal-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .success-modal-button:hover {
+    background-color: #0056b3;
+  }
+   */
